@@ -9,4 +9,6 @@
         <string name="enter_grade_four">Final project (25%)</string>
         <string name="calculate_button">Calculate</string>
         <string name="finalGrade">Final grade</string>
+
+        <string name="error">Missing Grades. Enter All Grades</string>
 </resources>

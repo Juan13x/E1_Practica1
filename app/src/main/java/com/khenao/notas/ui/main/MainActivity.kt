@@ -2,33 +2,40 @@ package com.khenao.notas.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.khenao.notas.R
 import com.khenao.notas.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var MainActivityBinding : ActivityMainBinding
+    private lateinit var mainActivityBinding : ActivityMainBinding
     private lateinit var mainActivityModel: MainActivityModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        MainActivityBinding = ActivityMainBinding.inflate(layoutInflater)
-        val view = MainActivityBinding.root
+        mainActivityBinding = ActivityMainBinding.inflate(layoutInflater)
+        val view = mainActivityBinding.root
         setContentView(view)
 
         mainActivityModel = ViewModelProvider(this)[MainActivityModel::class.java]
 
-        MainActivityBinding.calculateActionButton.setOnClickListener {
-            val valueGradeOne = MainActivityBinding.enterGradeOneEditText.text.toString().toDouble()
-            val valueGradeTwo = MainActivityBinding.enterGradeTwoEditText.text.toString().toDouble()
-            val valueGradeThree = MainActivityBinding.enterGradeTrheeEditText.text.toString().toDouble()
-            val valueGradeFour = MainActivityBinding.enterGradeFourEditText.text.toString().toDouble()
-            mainActivityModel.CalculateGrade(valueGradeOne, valueGradeTwo, valueGradeThree, valueGradeFour)
+        with(mainActivityBinding){
+            calculateActionButton.setOnClickListener {
+                val valueGradeOne = enterGradeOneEditText.text.toString()
+                val valueGradeTwo = enterGradeTwoEditText.text.toString()
+                val valueGradeThree = enterGradeTrheeEditText.text.toString()
+                val valueGradeFour = enterGradeFourEditText.text.toString()
 
-        }
+                mainActivityModel.calculateGrade(valueGradeOne, valueGradeTwo, valueGradeThree, valueGradeFour)
+            }
 
-        mainActivityModel.gradeLiveData.observe(this@MainActivity){gradeLiveData->
-            MainActivityBinding.finalGradeTextView.text = gradeLiveData.toString()
+            mainActivityModel.errorLiveData.observe(this@MainActivity) {
+                Toast.makeText(this@MainActivity, R.string.error, Toast.LENGTH_SHORT).show()
+            }
 
+            mainActivityModel.gradeLiveData.observe(this@MainActivity){grade->
+                mainActivityBinding.finalGradeTextView.text = grade.toString()
+            }
         }
     }
 }

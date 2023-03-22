@@ -8,4 +8,6 @@
     <string name="enter_grade_four">Proyecto final (25%)</string>
     <string name="calculate_button">Calcular</string>
     <string name="finalGrade">Nota Final</string>
+
+    <string name="error">Faltan Notas. Ingrese Todas las notas</string>
 </resources>
