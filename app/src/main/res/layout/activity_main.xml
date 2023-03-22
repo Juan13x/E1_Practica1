@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:id="@+id/linear_layaout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp"
         tools:context=".ui.main.MainActivity">
@@ -23,8 +22,28 @@
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="17dp"
-            android:textStyle="normal|bold" />
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/explanation_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/explanation"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/final_grade_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/finalGrade"
+            android:textAlignment="center"
+            android:textColor="#000000" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -32,18 +51,8 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/herramientas" />
-
-        <TextView
-            android:id="@+id/explanation_text_view"
-            android:layout_width="380dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="@string/explanation"
-            android:textAlignment="center"
-            android:textColor="@color/material_dynamic_neutral10"
-            android:textSize="12dp"
-            tools:ignore="TextSizeCheck" />
+            app:srcCompat="@drawable/herramientas"
+            tools:ignore="ContentDescription" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/note_one_input_layaout"
@@ -57,7 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:hint="@string/enter_note_one"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,7 +83,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_note_two"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,7 +100,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_note_three"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -104,7 +116,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_note_four"
-                android:inputType="numberDecimal" />
+                android:inputType="numberDecimal"
+                tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -112,16 +125,8 @@
             android:id="@+id/calculate_action_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/calculate_button" />
-
-        <TextView
-            android:id="@+id/final_grade_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/finalGrade"
-            android:textAlignment="center"
-            android:textColor="#000000" />
+            android:text="@string/calculate_button"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 </ScrollView>
