@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         mainActivityModel = ViewModelProvider(this)[MainActivityModel::class.java]
 
         MainActivityBinding.calculateActionButton.setOnClickListener {
-            val valueNoteOne = MainActivityBinding.enterNoteOneEditText.text.toString().toDouble()
-            val valueNoteTwo = MainActivityBinding.enterNoteTwoEditText.text.toString().toDouble()
-            val valueNoteThree = MainActivityBinding.enterNoteTrheeEditText.text.toString().toDouble()
-            val valueNoteFour = MainActivityBinding.enterNoteFourEditText.text.toString().toDouble()
-            mainActivityModel.CalculateGrade(valueNoteOne, valueNoteTwo, valueNoteThree, valueNoteFour)
+            val valueGradeOne = MainActivityBinding.enterGradeOneEditText.text.toString().toDouble()
+            val valueGradeTwo = MainActivityBinding.enterGradeTwoEditText.text.toString().toDouble()
+            val valueGradeThree = MainActivityBinding.enterGradeTrheeEditText.text.toString().toDouble()
+            val valueGradeFour = MainActivityBinding.enterGradeFourEditText.text.toString().toDouble()
+            mainActivityModel.CalculateGrade(valueGradeOne, valueGradeTwo, valueGradeThree, valueGradeFour)
 
         }
 

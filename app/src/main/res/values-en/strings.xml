@@ -3,10 +3,10 @@
         <string name="app_name">Grade</string>
         <string name="notasname">Grade\n\n Mobile Device Programming</string>
         <string name="explanation">Welcome\nTo calculate your grade for the Mobile Device Programming course, enter each of your grades and then click on the Calculate button.\n\n Make sure to enter each grade in the corresponding box.</string>
-        <string name="enter_note_one">Laboratory practices (60%)</string>
-        <string name="enter_note_two">First preview of the final project (7%)</string>
-        <string name="enter_note_three">Second preview of the final project (8%)</string>
-        <string name="enter_note_four">Final project (25%)</string>
+        <string name="enter_grade_one">Laboratory practices (60%)</string>
+        <string name="enter_grade_two">First preview of the final project (7%)</string>
+        <string name="enter_grade_three">Second preview of the final project (8%)</string>
+        <string name="enter_grade_four">Final project (25%)</string>
         <string name="calculate_button">Calculate</string>
         <string name="finalGrade">Final grade</string>
 </resources>

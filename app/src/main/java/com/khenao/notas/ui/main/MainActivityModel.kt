@@ -9,12 +9,12 @@ class MainActivityModel : ViewModel(){
     val gradeLiveData: LiveData<Double> = gradeMutableLiveData
 
     fun CalculateGrade(
-        valueNoteOne: Double,
-        valueNoteTwo: Double,
-        valueNoteThree: Double,
-        valueNoteFour: Double
+        valueGradeOne: Double,
+        valueGradeTwo: Double,
+        valueGradeThree: Double,
+        valueGradeFour: Double
     ) {
-        gradeMutableLiveData.value = valueNoteOne * 0.6 + valueNoteTwo * 0.07 + valueNoteThree * 0.08 + valueNoteFour * 0.25
+        gradeMutableLiveData.value = valueGradeOne * 0.6 + valueGradeTwo * 0.07 + valueGradeThree * 0.08 + valueGradeFour * 0.25
     }
 
 }
