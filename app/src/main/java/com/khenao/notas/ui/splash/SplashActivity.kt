@@ -21,40 +21,10 @@ class SplashActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(
             timerTask {
-            val intent = Intent(this@SplashActivity,MainActivity::class.java)
-            startActivity(intent)
+                val intent = Intent(this@SplashActivity,MainActivity::class.java)
+                startActivity(intent)
+                finish()
         }, 2000
         )
-
     }
-
-    override fun onStart() {
-        super.onStart()
-    }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-    }
-
-    override fun onStop() {
-        super.onStop()
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-
-
-
-
-
-
 }
