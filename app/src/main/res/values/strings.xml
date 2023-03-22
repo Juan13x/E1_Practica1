@@ -7,4 +7,5 @@
     <string name="enter_note_three">Segundo avance del proyecto final (8%)</string>
     <string name="enter_note_four">Proyecto final (25%)</string>
     <string name="calculate_button">Calcular</string>
+    <string name="finalGrade">Nota Final</string>
 </resources>
