@@ -2,10 +2,12 @@
     <string name="app_name">Notas</string>
     <string name="notasname">Notas\n\n Programación de Dispositivos Móviles</string>
     <string name="explanation">Bienvenido\nPara calcular su nota del curso de Programación de Dispositivos Móviles ingrese cada una de sus notas y luego de click en el botón Calcular.\n\n Asegurese de ingresar cada nota en el recuadro correspondiente.</string>
-    <string name="enter_note_one">Prácticas del laboratorio (60%)</string>
-    <string name="enter_note_two">Primer avance del proyecto final (7%)</string>
-    <string name="enter_note_three">Segundo avance del proyecto final (8%)</string>
-    <string name="enter_note_four">Proyecto final (25%)</string>
+    <string name="enter_grade_one">Prácticas del laboratorio (60%)</string>
+    <string name="enter_grade_two">Primer avance del proyecto final (7%)</string>
+    <string name="enter_grade_three">Segundo avance del proyecto final (8%)</string>
+    <string name="enter_grade_four">Proyecto final (25%)</string>
     <string name="calculate_button">Calcular</string>
     <string name="finalGrade">Nota Final</string>
+
+    <string name="error">Campos Vacíos. Ingrese Todas las notas.</string>
 </resources>

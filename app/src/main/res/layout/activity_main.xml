@@ -55,67 +55,67 @@
             tools:ignore="ContentDescription" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/note_one_input_layaout"
+            android:id="@+id/grade_one_input_layaout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enter_note_one_edit_text"
+                android:id="@+id/enter_grade_one_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:hint="@string/enter_note_one"
+                android:hint="@string/enter_grade_one"
                 android:inputType="numberDecimal"
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/note_two_input_layaout"
+            android:id="@+id/grade_two_input_layaout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enter_note_two_edit_text"
+                android:id="@+id/enter_grade_two_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_note_two"
+                android:hint="@string/enter_grade_two"
                 android:inputType="numberDecimal"
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/note_trhee_input_layaout"
+            android:id="@+id/grade_trhee_input_layaout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enter_note_trhee_edit_text"
+                android:id="@+id/enter_grade_trhee_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_note_three"
+                android:hint="@string/enter_grade_three"
                 android:inputType="numberDecimal"
                 tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/note_four_input_layaout"
+            android:id="@+id/grade_four_input_layaout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/enter_note_four_edit_text"
+                android:id="@+id/enter_grade_four_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_note_four"
+                android:hint="@string/enter_grade_four"
                 android:inputType="numberDecimal"
                 tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
